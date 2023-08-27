@@ -1,0 +1,2 @@
+summon vex
+kill @s
