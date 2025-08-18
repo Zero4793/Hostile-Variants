@@ -1,0 +1,9 @@
+#Zero_4793
+
+# data merge entity @s[tag=!set] {CustomName:'{"text":"Tank Zombie"}',CustomNameVisible:0b}
+execute as @s[tag=!set] run item replace entity @s armor.head with iron_helmet
+execute as @s[tag=!set] run item replace entity @s armor.chest with iron_chestplate
+execute as @s[tag=!set] run item replace entity @s armor.legs with iron_leggings
+execute as @s[tag=!set] run item replace entity @s armor.feet with iron_boots
+execute as @s[tag=!set] run item replace entity @s weapon.mainhand with iron_sword
+tag @s add set

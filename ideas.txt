@@ -1,27 +1,29 @@
 todo:
 	#illagers
 		witch
+			bring back nether tower?
 			hover
 				levitates out of melee range
 			storm
 				conjures lightning
 		pillager
 			triple arrow enchant
+			set traps
 		vindicator
 		evoker
 			elements or mobs?
 			past had skele/arrow, creeper/explode, blaze/fire and zombies
+			no variant. smart evoker that changes movesets, triggers different fangs/vex each chant
 	vex
-		variants of own, or merely spawns for evoker?
+		variants of own, or merely spawns for evoker? i think latter
 	ravager
 	#undead
 		#zombies
 			zombified_piglin
 			zoglin
-		phantom
-			dementor
+		#skeletons
+			desert version shoots arrows of hunger
 	#arthropods
-		spider
 		cave_spider
 		silverfish
 		endermites
@@ -29,7 +31,6 @@ todo:
 	guardian
 	slime
 	magma_cube
-		needs nerfing
 	blaze
 	ghast
 	hoglin
@@ -39,43 +40,19 @@ todo:
 		item killer
 	piglin_brute
 	enderman
-		give nearby ender ability. teleport when threatened
 		no variants, only boss.
 		gives darkness and summons dementors when angry
 	shulker
 
 notes
-mobs that put on light sources, break torches etc
+mobs that put out light sources, break torches etc
 creeper that has massive boom, slows,freezes all near mobs, has massive particle range and spooky sounds. all for scary ambienc and signal its approach as it is BIG boom
 drowned that pulls player into the water
-need to set scoreboard zero.age
-raining arrows and ender are also broken
-fix it so old boss stays, new are demoted
-decrease guardian spawnrate
-baby zombies grow into adult?
+witch/enderman/evoker. damage neutral mobs from player
 
+biome based spawning/randomization.
+biome changes spawn ratios and also unique variants
 
+make baby skeles and such ride adult
 
-#have enderman summon dementor when angry? also only apply darkness/blindness when angry?
-Dementor
-	Dementor set
-	execute as @e[type=phantom,tag=dementor,tag=!set] run data merge entity @s {Attributes:[{Name:"generic.maxHealth",Base:1}],Health:1,Silent:1}
-	effect give @e[type=phantom,tag=dementor,tag=!set] minecraft:invisibility 100000 1 true
-	effect give @e[type=phantom,tag=dementor,tag=!set] minecraft:weakness 100000 10 true
-	tag @e[type=phantom,tag=dementor] add set
-
-	Dementor tick
-	execute as @e[type=phantom,tag=dementor] run data merge entity @s {Fire:-1s}
-	execute at @e[type=phantom,tag=dementor] run particle minecraft:dust 0 0 0 16 ~ ~ ~ 0 0 0 1 0
-	execute at @e[type=phantom,tag=dementor] unless entity @a[distance=..4] run particle minecraft:dust 1 0 1 1.6 ~ ~ ~ 0 0 0 1 0
-	execute at @e[type=phantom,tag=dementor] if entity @a[distance=..4] run particle minecraft:dust 1 0 0 1.6 ~ ~ ~ 0 0 0 1 0
-	execute at @e[type=phantom,tag=dementor] unless entity @a[distance=..4] run playsound minecraft:entity.enderman.ambient hostile @a ~ ~ ~ .2 0
-	execute at @e[type=phantom,tag=dementor] if entity @a[distance=..4] run playsound minecraft:entity.enderman.ambient hostile @a ~ ~ ~ .2 2
-	execute at @e[type=phantom,tag=dementor] run effect give @a[distance=..2] minecraft:levitation 1 2 true
-
-	Dementor spawn
-	tag @e[type=minecraft:phantom] add dementor
-	execute at @e[type=minecraft:enderman,tag=!set] in minecraft:overworld as @e[limit=2] run summon minecraft:phantom ~ ~2 ~ {Tags:[dementor]}
-	execute at @e[type=minecraft:enderman,tag=!set] in minecraft:the_nether as @e[limit=4] run summon minecraft:phantom ~ ~2 ~ {Tags:[dementor]}
-	execute at @e[type=minecraft:enderman,tag=!set] in minecraft:the_end as @e[limit=1] run summon minecraft:phantom ~ ~2 ~ {Tags:[dementor]}
-	tag @e[type=minecraft:enderman] add set
+creepers ignite from fire
