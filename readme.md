@@ -1,3 +1,6 @@
+# About
+# Plan
+# Ideas
 todo:
 	#illagers
 		witch
