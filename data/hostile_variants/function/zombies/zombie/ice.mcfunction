@@ -1,7 +1,7 @@
 #Zero_4793
 
 execute as @s[tag=!set] run item replace entity @s armor.head with ice
-execute as @s[tag=!set] run item replace entity @s armor.feet with iron_boots[enchantments={levels:{"frost_walker":2}}]
+execute as @s[tag=!set] run item replace entity @s armor.feet with iron_boots[enchantments={frost_walker:2}]
 effect give @s[tag=!set] slowness infinite 0 true
 tag @s add set
 

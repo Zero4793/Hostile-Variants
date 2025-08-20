@@ -6,7 +6,6 @@ execute as @e[type=drowned,tag=!checked,tag=!horse,name="knight"] run data merge
 execute as @e[type=drowned,tag=!checked,tag=!tank,name="tank"] run data merge entity @s {Tags:["tank","checked"]}
 execute as @e[type=drowned,tag=!checked,tag=!boss,tag=!tank,name="boss"] run data merge entity @s {Tags:["boss","checked"]}
 
-
 #random
 execute as @e[type=minecraft:drowned,tag=!checked] store result score @s random run random value 0..100
 execute as @e[type=drowned,tag=!checked,scores={random=00..00}] run tag @s add boss

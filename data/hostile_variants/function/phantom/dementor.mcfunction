@@ -1,5 +1,5 @@
 # Dementor set
-execute as @e[type=phantom,tag=dementor,tag=!set] run data merge entity @s {attributes:[{id:generic.max_health,base:1.0},{id:generic.attack_damage,base:0}],Health:1,Silent:1b}
+execute as @e[type=phantom,tag=dementor,tag=!set] run data merge entity @s {attributes:[{id:max_health,base:1.0},{id:attack_damage,base:0}],Health:1,Silent:1b}
 effect give @e[type=phantom,tag=dementor,tag=!set] minecraft:invisibility infinite 1 true
 tag @e[type=phantom,tag=dementor] add set
 

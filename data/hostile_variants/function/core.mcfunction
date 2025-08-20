@@ -8,5 +8,6 @@ function hostile_variants:enderman/core
 function hostile_variants:creeper/core
 
 #EXILE
+tag @a remove EXILE
 tp @e[tag=EXILE] ~ -200 ~
 kill @e[tag=EXILE]

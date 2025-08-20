@@ -1,4 +1,4 @@
-execute as @s[tag=!set] run attribute @s minecraft:generic.movement_speed base set 0.3
+execute as @s[tag=!set] run attribute @s minecraft:movement_speed base set 0.3
 tag @s add unriding
 tag @s add set
 

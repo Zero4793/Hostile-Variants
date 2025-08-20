@@ -1,6 +1,6 @@
 #Zero_4793
 
-effect give @s[tag=!set] speed infinite 3 true
+effect give @s[tag=!set] speed infinite 2 true
 tag @s add set
 
 fill ~-1 ~-1 ~-1 ~1 ~1 ~1 fire replace air

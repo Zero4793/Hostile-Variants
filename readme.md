@@ -42,9 +42,6 @@ todo:
 		block placer
 		item killer
 	piglin_brute
-	enderman
-		no variants, only boss.
-		gives darkness and summons dementors when angry
 	shulker
 
 notes
@@ -55,7 +52,5 @@ witch/enderman/evoker. damage neutral mobs from player
 
 biome based spawning/randomization.
 biome changes spawn ratios and also unique variants
-
-make baby skeles and such ride adult
 
 creepers ignite from fire

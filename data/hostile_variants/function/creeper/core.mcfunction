@@ -13,6 +13,5 @@ tag @e[type=creeper] add checked
 
 
 #Execute
-execute as @e[type=creeper,tag=baby,tag=!set] run data merge entity @s {Fuse:20,ExplosionRadius:1,Health:5,attributes:[{id:generic.max_health,base:5.0},{id:"generic.scale",base:0.5},{id:"generic.movement_speed",base:0.35}],Tags:[set]}
+execute as @e[type=creeper,tag=baby,tag=!set] run data merge entity @s {Fuse:20,ExplosionRadius:1,Health:5,attributes:[{id:max_health,base:5.0},{id:scale,base:0.5},{id:movement_speed,base:0.35}],Tags:[set]}
 execute as @e[type=creeper,tag=queen] at @s run function hostile_variants:creeper/queen
-

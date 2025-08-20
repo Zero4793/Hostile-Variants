@@ -15,7 +15,7 @@ execute as @s[type=husk,tag=!set] run item replace entity @s weapon.mainhand wit
 execute as @s[type=drowned,tag=!set] run item replace entity @s weapon.mainhand with trident
 execute as @s[type=zombie_villager,tag=!set] run item replace entity @s weapon.mainhand with diamond_hoe
 effect give @s[tag=!set] slowness infinite 0 true
-attribute @s[tag=!set] generic.scale base set 1.1
+attribute @s[tag=!set] scale base set 1.1
 tag @s[tag=!tank] add set
 
 

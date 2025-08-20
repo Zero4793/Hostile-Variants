@@ -1,16 +1,16 @@
 #Zero_4793
 
 #witchy
-execute as @s[tag=witchy_spawn] run summon phantom ~ ~ ~ {Size:6,Tags:[checked,witchy],Passengers:[{id:witch}]}
+execute as @s[tag=witchy_spawn] run summon phantom ~ ~ ~ {size:6,Tags:[checked,witchy],Passengers:[{id:witch}]}
 
 #turret
-execute as @s[tag=turret_spawn] run summon phantom ~ ~ ~ {Size:6,Tags:[checked,turret],Passengers:[{id:blaze},{id:blaze},{id:blaze},{id:blaze},{id:blaze},{id:blaze},{id:blaze},{id:blaze}]}
+execute as @s[tag=turret_spawn] run summon phantom ~ ~ ~ {size:6,Tags:[checked,turret],Passengers:[{id:blaze},{id:blaze},{id:blaze},{id:blaze},{id:blaze},{id:blaze},{id:blaze},{id:blaze}]}
 
 #bomber
-execute as @s[tag=bomber_spawn] run summon phantom ~ ~ ~ {Size:6,Tags:[checked,bomber],Passengers:[{id:creeper},{id:creeper},{id:creeper},{id:creeper},{id:creeper},{id:creeper},{id:creeper},{id:creeper}]}
+execute as @s[tag=bomber_spawn] run summon phantom ~ ~ ~ {size:6,Tags:[checked,bomber],Passengers:[{id:creeper},{id:creeper},{id:creeper},{id:creeper},{id:creeper},{id:creeper},{id:creeper},{id:creeper}]}
 
 #evoker
-execute as @s[tag=evoker_spawn] run summon phantom ~ ~ ~ {Size:6,Tags:[checked,evoker],Passengers:[{id:evoker}]}
+execute as @s[tag=evoker_spawn] run summon phantom ~ ~ ~ {size:6,Tags:[checked,evoker],Passengers:[{id:evoker}]}
 
 #dementor
 execute as @s[tag=demons_spawn] as @e[limit=8] run summon phantom ~ ~ ~ {Tags:[checked,dementor]}
